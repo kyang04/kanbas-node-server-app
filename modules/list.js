@@ -6,6 +6,7 @@ import {
     setModules,
 } from "./reducer";
 import * as client from "./client";
+import { findModulesForCourse, createModule } from "./client";
 function ModuleList() {
     const {courseId} = useParams();
     useEffect(() => {
