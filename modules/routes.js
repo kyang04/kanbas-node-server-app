@@ -35,6 +35,11 @@ function ModuleRoutes(app) {
         res.send(modules);
     });
 
+    app.get("/api/modules", (req, res) => {
+        const modules = Database.modules;
+        res.send(modules);
+    })
+
 }
 export default ModuleRoutes;
 
